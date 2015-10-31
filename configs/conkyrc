@@ -1,0 +1,22 @@
+
+background no
+out_to_x no
+out_to_console yes
+update_interval 1
+total_run_times 0
+use_spacer none
+temperature_unit fahrenheit
+
+TEXT
+   ${downspeedf wlp3s0} | ${upspeedf wlp3s0} \
+  ${wireless_link_qual_perc wlp3s0}% ${wireless_essid wlp3s0} \
+${if_up enpos25}  ${addr wlp3s0} ${endif}\
+   \
+  ${hwmon 2 temp 1}° \
+  ${cpu}% ${mem} \
+  ${fs_free /} ${fs_free /home/}   \
+  ${battery_percent BAT0}% ${battery_time BAT0} ${battery_percent BAT1}% ${battery_time BAT1}   \
+ ${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ KLAX temperature}° \
+${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ KLAX cloud_cover}  \
+  ${time %a %b %d} \
+  ${time %H:%M} 
