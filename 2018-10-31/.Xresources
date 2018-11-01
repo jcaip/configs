@@ -1,0 +1,63 @@
+! special
+*.foreground:   #d0d0d0
+*.background:   #303030
+*.cursorColor:  #d0d0d0
+
+! black
+*.color0:       #151515
+*.color8:       #505050
+
+! red
+*.color1:       #fb9fb1
+*.color9:       #fb9fb1
+
+! green
+*.color2:       #acc267
+*.color10:      #acc267
+
+! yellow
+*.color3:       #ddb26f
+*.color11:      #ddb26f
+
+! blue
+*.color4:       #6fc2ef
+*.color12:      #6fc2ef
+
+! magenta
+*.color5:       #e1a3ee
+*.color13:      #e1a3ee
+
+! cyan
+*.color6:       #12cfc0
+*.color14:      #12cfc0
+
+! white
+*.color7:       #d0d0d0
+*.color15:      #f5f5f5
+
+
+! ------------------------------------------------------------------------------
+! --- end of terminal colors section -------------------------------------------
+! ------------------------------------------------------------------------------
+URxvt.scrollBar: false
+Xft.rgba:none
+Xft.hinting:true
+Xft.hintstyle:hintfull
+!Xft.dpi:140
+
+URxvt.font: xft:Ubuntu Mono:regular:size=11, xft:DejaVu Sans Mono:size=11
+URxvt.imFont: xft:Ubuntu Mono:regular:size=11
+URxvt.boldFont: xft:Ubuntu Mono:bold:size=11
+URxvt.italitcFont: xft:Ubuntu Mono:italic:size=11
+URxvt.boldItalicFont: xft:Ubuntu Mono:bold:italic:size=11
+URxvt.letterSpace:0
+
+URxvt.transparent: false
+URxvt.shading: 40
+
+Xcursor.theme: xcursor-simpleandsoft
+Xcursor.size: 16
+
+urxvt*perl-ext-common: default,matcher
+urxvt*url-launcher: /usr/bin/firefox
+urxvt*matcher.button: 1
